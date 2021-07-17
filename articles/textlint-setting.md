@@ -73,7 +73,6 @@ npm install -g textlint
 
 ```
 command not found: textlint # textlint コマンドが使えない問題が発生するのでグローバルにインストール
-
 ```
 
 ### VSCode 上の操作
@@ -96,10 +95,8 @@ VSCode に拡張機能を導入する。
 まずルールのプリセットをインストールする。
 
 ```
-
 npm install --save-dev
 textlint-rule-preset-ja-technical-writing textlint-rule-preset-ja-spacing
-
 ```
 
 > GitHub: textlint-rule-preset-ja-technical-writing
@@ -113,7 +110,6 @@ textlint-rule-preset-ja-technical-writing textlint-rule-preset-ja-spacing
 次に，`.textlintrc` 上に以下のコードを書く。
 
 ```
-
 {
 "plugins": {
 "@textlint/markdown": {
@@ -149,7 +145,6 @@ exceptPunctuation: true,
 "no-mix-dearu-desumasu": true
 }
 }
-
 ```
 
 以上で textlint の設定は完了。
@@ -170,6 +165,5 @@ https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b
 マークダウン記法について
 https://zenn.dev/zenn/articles/markdown-guide
 
-```
-
-```
+よりよい文書を書くための校正ツール「textlint」のSmartHR用ルールプリセットを公開しました！｜SmartHRオープン社内報
+https://shanaiho.smarthr.co.jp/n/n881866630eda#4m9j3
