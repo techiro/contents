@@ -13,8 +13,7 @@
       "no-doubled-joshi": {
          "strict": false,
          "allow": ["か"], // 助詞のうち「か」は複数回の出現を許す(e.g.: するかどうか)
-      },
-      "no-mix-dearu-desumasu": true
+      }
     },
     "preset-ja-spacing": {
       "ja-space-between-half-and-full-width": {
@@ -27,7 +26,7 @@
       }
     },
     "ja-technical-writing/ja-no-mixed-period": {
-      "allowPeriodMarks": [":","．"],
+      "allowPeriodMarks": [":"],
     },
     "ja-technical-writing/sentence-length": false //100文字数制限の無効化
   }
