@@ -165,5 +165,5 @@ https://zenn.dev/serima/articles/4dac7baf0b9377b0b58b
 マークダウン記法について
 https://zenn.dev/zenn/articles/markdown-guide
 
-よりよい文書を書くための校正ツール「textlint」のSmartHR用ルールプリセットを公開しました！｜SmartHRオープン社内報
+よりよい文書を書くための校正ツール「textlint」の SmartHR 用ルールプリセットを公開しました！｜ SmartHR オープン社内報
 https://shanaiho.smarthr.co.jp/n/n881866630eda#4m9j3
