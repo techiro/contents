@@ -1,3 +1,11 @@
+---
+title: '[アプリ開発] Firebase Authを使ってログイン画面を実装する' # 記事のタイトル
+emoji: '🔥' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア記事
+topics: ['swift', 'firebase', '個人開発'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
+---
+
 # 1. はじめに
 
 今回の記事は，Firebase Auth を使ってログイン画面を実装します．
@@ -31,7 +39,7 @@ Firebase のトップ画面から，iOS アプリを追加します．
 
 ## 2.3. Google でログインを有効にする
 
-Authentication を選択して，始めるボタンをクリック
+Authentication を選択して，始めるボタンをクリックする．
 
 ![;file20210718_](../images/20210718_20.51.png)
 
