@@ -118,9 +118,9 @@ Google ログインは，後日実装する予定です．
 - Google サインイン
 - Google サインアップ
 
-まずは，ログイン・ログアウト機能を実装します．
+まずは，ログイン・ログアウト機能を実装するための Firebase 関数のラッパークラスを作成します．
 
-```swift
+```swift FirebaseAuthService.swift
 import FirebaseAuth
 
 final class FirebaseAuthViewModel: ObservableObject {
