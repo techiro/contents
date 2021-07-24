@@ -56,3 +56,5 @@ Service との違いは，Service は開発者が定義した関数を叩き，�
 ### Model の立ち位置
 
 Service に付随して，宣言するモデルを定義．個々では AppUser のようなものを定義する．
+
+## Do catch 構文とクロージャー構文
