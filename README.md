@@ -50,3 +50,24 @@ npx zenn new:article --slug my-awesome-article
 ### コマンド
 - ⌘ + shift + p
 
+
+# VSCodeのコマンド
+
+## 複数行を選択するコマンド
+
+Mac: `⌥ Opt+⌘ Cmd+↑/↓`
+Windows: `Ctrl+Alt+↑/↓`
+Linux: `Shift+Alt+↑/↓`
+
+### 引用文を挿入するフロー
+
+```text
+引用したい文章
+引用したい文章
+引用したい文章
+```
+カーソルを行の先頭に持っていき、引用したい文章に到達するまで複数回コマンドを叩く。(`⌥ Opt+⌘ Cmd+↑/↓`)
+
+その状態で引用記号の `>` を入力すれば、完了します。
+
+
