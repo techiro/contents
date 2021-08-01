@@ -230,3 +230,49 @@ drawio には UML2.5 を使用できる。しかし、オブジェクトノー�
 
 コードも一応載せておきます。
 
+
+### iterativeの例
+
+```swift
+func filter_map_sample() {
+    let array = [1, 2 ,3, 4, 5]
+    var result: [Int] = []
+    //iterativeの例 コレクションのそれぞれの要素に対してアクションを行う。
+    for i in array {
+        if i.isMultiple(of: 2) {
+            result.append(i * 3)
+        }
+            }
+
+    print("iterative:",result)
+}
+
+filter_map_sample()
+
+
+```
+
+### Streamの例
+
+```swift streamの例
+
+func filter_map_sample() {
+    let array = [1, 2 ,3, 4, 5]
+    //streamの例
+    let hof = array
+        .filter { $0 % 2 == 0 }
+        .map { $0 * 3 }
+    
+    print("stream:",hof)
+}
+
+filter_map_sample()
+
+```
+
+![拡張領域](../images/20210801_17.31.png)
+
+
+
+--------------------------------
+
