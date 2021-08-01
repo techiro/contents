@@ -31,7 +31,7 @@ npx zenn new:article --slug my-awesome-article
 
 ## コードブロック
 
-\```js:ファイル名
+\```swift:sample.swift
 
 \```
 
@@ -42,3 +42,11 @@ npx zenn new:article --slug my-awesome-article
 
 :::
 ```
+
+# よく使うプラグイン
+
+## [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one#keyboard-shortcuts-1)
+
+### コマンド
+- ⌘ + shift + p
+
