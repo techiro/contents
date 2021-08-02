@@ -27,3 +27,28 @@ SwiftUI では、変数を参照型として扱うための Binding という型
 - Presenter: 自分以外の中継役
 - Entity: データそのもの
 - Router: 画面遷移担当
+
+## Presenter
+View と Router、Interactor の３つと関係しています。
+依存しているのは、Router と Interactor の 2 つで、View からは依存されています。そのため Presenter は View のことは何も知らずただ View(Button やタップなど)に命令されたことに従うウェイターさんのような仕事をこなします。
+- View から受け取ったイベントを別クラスに依頼
+- View に対して画面更新を依頼
+- Interactor に対してデータの取得を依頼
+- Router に対して画面遷移を依頼
+
+```swift
+final class PostsListPresenter: ObservableObject {
+    struct Parameter {
+        let frogs: [Post]
+    }
+    enum Inputs {
+        case didTapAboutButton
+    }
+    private let router = PostsListListRouter()
+    let params: Parameter
+    @Published var isShowAbout = false
+    init(params: Parameter) {
+        self.params = params
+    }
+}
+```
