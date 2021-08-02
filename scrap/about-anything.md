@@ -19,3 +19,11 @@ Key Value Observe の略のことです。
 SwiftUI では、変数を参照型として扱うための Binding という型があります。
 @Binding は、Binding 型を扱うための PropertyWrapper です。
 つまり、@Binding と Binding は明確には異なるものです。
+
+## VIPER
+
+- View: View と ViewController
+- Interactor: API 通信担当
+- Presenter: 自分以外の中継役
+- Entity: データそのもの
+- Router: 画面遷移担当
