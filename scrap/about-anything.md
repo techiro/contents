@@ -11,3 +11,11 @@ Key Value Observe の略のことです。
 >NSKeyValueObserving プロトコルが自動的に適合される(引用:https://qiita.com/ysn/items/9ca0248362f47d563f38)
 
 
+## SoC Separation of concerns
+コンピュータプログラムを異なるセクションに分割し、各セクションが別々の問題に対処する設計原理のことです。
+5 つの SOLID 原則（単一責任とインターフェイス分離）のうち 2 つが、この概念から直接派生していることが非常に重要です。
+
+## @Binding
+SwiftUI では、変数を参照型として扱うための Binding という型があります。
+@Binding は、Binding 型を扱うための PropertyWrapper です。
+つまり、@Binding と Binding は明確には異なるものです。
