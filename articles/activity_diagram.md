@@ -1,3 +1,11 @@
+---
+title: 'アクティビティ図' # 記事のタイトル
+emoji: '🤖' # アイキャッチとして使われる絵文字（1文字だけ）
+type: 'tech' # tech: 技術記事 / idea: アイデア記事
+topics: ['uml', 'architecture'] # タグ。["markdown", "rust", "aws"]のように指定する
+published: false # 公開設定（falseにすると下書き）
+---
+
 # 1. アクティビティ図（activity diagram）とは
 
 - 処理の実行手順を表すダイアグラム
