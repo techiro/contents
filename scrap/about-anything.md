@@ -11,7 +11,7 @@ Key Value Observe の略のことです。
 >NSKeyValueObserving プロトコルが自動的に適合される(引用:https://qiita.com/ysn/items/9ca0248362f47d563f38)
 
 
-## SoC Separation of concerns
+## SoC Separation of concerns 関心の分離
 コンピュータプログラムを異なるセクションに分割し、各セクションが別々の問題に対処する設計原理のことです。
 5 つの SOLID 原則（単一責任とインターフェイス分離）のうち 2 つが、この概念から直接派生していることが非常に重要です。
 
@@ -52,3 +52,8 @@ final class PostsListPresenter: ObservableObject {
     }
 }
 ```
+
+
+## @StateObjectと@ObservedObjectの違い
+
+@StateObject は親の画面更新によって状態が変化せずに、値が保持される。
