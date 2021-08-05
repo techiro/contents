@@ -62,3 +62,27 @@ final class PostsListPresenter: ObservableObject {
 ## VStackとLazyVStackの違い
 「Lazy」が付いていない HStack・VStack との違いは「必要な分だけ読み込む」ところです。
 LazyHStack や LazyVStack は画面に表示される分だけ順次メモリにロードしてくれます。
+
+
+## Conpletionの処理を関数にして切り分ける
+
+```swift
+
+//completionの時
+private func onReceive(_ completion: Subscribers.Completion<Error>) {
+    switch completion {
+    case .finished:
+        break
+    case let .failure(error):
+        print(error.localizedDescription)
+    }
+
+}
+private func onReceive(_ batch: [RecruitData]) {
+    state.responses += batch
+    state.page += 1
+    state.canLoadNext = batch.count > 50
+}
+
+
+```
