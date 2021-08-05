@@ -57,3 +57,8 @@ final class PostsListPresenter: ObservableObject {
 ## @StateObjectと@ObservedObjectの違い
 
 @StateObject は親の画面更新によって状態が変化せずに、値が保持される。
+
+
+## VStackとLazyVStackの違い
+「Lazy」が付いていない HStack・VStack との違いは「必要な分だけ読み込む」ところです。
+LazyHStack や LazyVStack は画面に表示される分だけ順次メモリにロードしてくれます。
