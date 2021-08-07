@@ -100,8 +100,17 @@ https://qiita.com/yokoyas000/items/327fb2b481738fac4c5a
 
 
 ## XCTest
+XCTest は、ユニットテストや UI テストの実行環境を提供します。
 テストという行為は品質保証を支援することにある。
 テストの自動化を行うことで、人の手作業の誤り・失敗を減らすなどを実現することが容易になる。
+
+- iOS Unit Testing Bundle
+  - ユニットテスト用
+- iOS UI Testing Bundle
+  - UI テスト用
+
+ターゲット作成時のテンプレートとして用意されている。
+
 
 ## GEMS（Generic Error-Modeling System）
 失敗には２つの種類が存在していて、1 つは実行。 2 つは、計画が不適切という分け方。
@@ -152,4 +161,24 @@ https://qiita.com/yokoyas000/items/327fb2b481738fac4c5a
   - テスト対象のコンポーネントとは関係がなく、ただコンパイルを通すためだけに作るものです。
 
 
+
+## Cuckoo 
+自動生成型のモックライブラリ
+https://github.com/Brightify/Cuckoo
+
+## HTTPスタブ
+外部との HTTP 通信するクラスについて、レスポンスが正しくパースできることを確認するユニットテストを書いたり、
+テスト用のダミーレスポンスを使って UI テストをするのに役立ちます。
+
+
+## アサーションメソッド
+expression を exp と略す。
+
+
+## XCTestのライフサイクル
+
+Singleton やデータベースなどの永続的なデータを扱うコンポーネントには tearDown()後処理を行うことが重要です。
+
+## テストのランダマイズ化
+Edit Scheme -> Test -> Options -> Randomize execution order からテスト実行順序のランダム化を行うことができる。
 
