@@ -241,3 +241,14 @@ OS 側で作成済みなので呼び出すだけ。
 
 その他のディスパッチキューについて詳しく書かれた記事
 https://qiita.com/ShoichiKuraoka/items/bb2a280688d29de3ff18
+
+## Operator
+ある Publisher を別の Publisher に変換するメソッドを、Combine の用語で「Operator」と呼びます。
+- map
+- filter
+- compactMap
+- combineLatest などがある
+
+## Combineについて
+SwiftUI は内部的に Combine を活用しています。
+
