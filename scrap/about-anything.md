@@ -203,3 +203,52 @@ Edit Scheme -> Test -> Options -> Randomize execution order からテスト実�
 3. Manager や ViewModel などでプロトコルをプロパティーに宣言
 
 実際に使用します。
+
+## 振舞駆動開発(BDD)
+- Given　あるコンテキストでテストを与えて
+- When　テスト対象に何かが起こる時
+- Then  ある結果が期待される
+という 3 つの要素に分けて仕様を記述する。
+
+## Quickの基本
+describe,context,it を使った Quick の基本です。
+
+## Nimbleの基本
+入力は「期待値」と「結果」の 2 つです。
+
+```
+expect(＜検証する式＞).to(＜期待する結果＞)
+```
+
+
+## リアクティブプログラミング
+アプリの非同期処理を行うために必要なライブラリは Foundation や UIkit などでは、Delegate,Notification Center,GCD Grand Central Dispatch, Callback などが使われている。
+これらとは異なる手法で非同期処理を実現しているリアクティブプログラミングという方法がある。
+
+## Dispatch Queue（直訳：送信待ち行列？）
+処理待ちタスクを追加するためのキュー。追加された順にタスクを処理側へ渡す役割を担う。タスクの処理は担当しない。
+## Main DispatchQueue
+OS 側で作成済みなので呼び出すだけ。
+1 つだけ存在。
+直列処理タイプ。
+UI 表示系タスクはここで行わないと動かない。
+
+## Grobal DispatchQueue
+OS 側で作成済みなので呼び出すだけ。
+5 つ存在。（ただし、実質使えるのは 4 つ）
+並列処理タイプ。
+用途を指定して呼出し。
+
+その他のディスパッチキューについて詳しく書かれた記事
+https://qiita.com/ShoichiKuraoka/items/bb2a280688d29de3ff18
+
+## Operator
+ある Publisher を別の Publisher に変換するメソッドを、Combine の用語で「Operator」と呼びます。
+- map
+- filter
+- compactMap
+- combineLatest などがある
+
+## Combineについて
+SwiftUI は内部的に Combine を活用しています。
+
