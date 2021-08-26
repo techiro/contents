@@ -252,3 +252,13 @@ https://qiita.com/ShoichiKuraoka/items/bb2a280688d29de3ff18
 ## Combineについて
 SwiftUI は内部的に Combine を活用しています。
 
+
+
+## Swift のエラー4分類
+
+### 関数の呼び元で回復可能だと判断される場合
+- Simple Domain Error:原因が明白なので、 nil を返す
+- Recoverable error:原因によって回復手段が異なると考えられるため、Error を throw
+### 関数の呼び元で回復不能だと判断される場合
+- Universal error:プログラムを停止させるべきであり、 fatalError() する
+- Logic failure:呼ぶ側のバグだとして、 precondition を使って正しい事前条件を明示
