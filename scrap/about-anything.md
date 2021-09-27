@@ -332,3 +332,20 @@ OOP が活躍し始めたのは,1990 年代の Java が登場してからの話�
 
 上位レベルと下位レベルのモジュールを独立させて開発できる。
 
+
+
+## 暗黙的な変数,予約語
+Swift には暗黙的な変数が存在します。
+例えば do catch 内に存在する error です。
+
+```swift
+do {
+  throw fatalError()
+} catch {
+  print(error)
+}
+
+```
+
+他にも、set の newValue、self などもあります。
+特に error は独自で定義した error とかぶる可能性高いため注意してください。
