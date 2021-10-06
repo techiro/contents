@@ -349,3 +349,14 @@ do {
 
 他にも、set の newValue、self などもあります。
 特に error は独自で定義した error とかぶる可能性高いため注意してください。
+
+
+## C++の書き方
+ベクトルの3つの宣言方法
+
+```cpp
+vector<int> v_1{0, 1, 2};
+vector<int> v_2 = {3, 4, 5};
+vector<int> v_3;
+v_3 = {6, 7, 8};
+```
