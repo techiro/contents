@@ -360,3 +360,10 @@ vector<int> v_2 = {3, 4, 5};
 vector<int> v_3;
 v_3 = {6, 7, 8};
 ```
+
+## Node.jsについて
+Node.jsはJavaScriptランタイムです。
+JavaScriptコードが実行できる開発環境ということ
+JavaScriptは、ブラウザで実行するように設計されたスクリプト言語で、それをPC上で実行できるようにしたものがNode.js
+
+Node.jsは、同時実行タスクに対して 1 つのイベント ループが使用される。
