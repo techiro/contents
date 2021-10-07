@@ -383,3 +383,5 @@ Node.jsは、同時実行タスクに対して 1 つのイベント ループが
 MicrosoftのVSCodeの使い方を説明した記事が役に立ちます。
 デバック方法を詳しく説明しています。
   https://docs.microsoft.com/ja-jp/learn/modules/debug-nodejs/5-analyze-your-program-state
+
+  https://code.visualstudio.com/docs/editor/debugging
