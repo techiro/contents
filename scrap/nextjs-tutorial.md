@@ -23,3 +23,23 @@ export default function FirstPost() {
 hogehoge
 </a>
 </Link>
+
+- コードの最適化
+Next.jsは必要なページのみ読み込むため最適化が図れる。
+あるページがエラーを出してもその他のページには影響がない
+
+Next以外の外部ページにリンクする必要がある場合。 jsアプリ、`Link`なしの<a>のみを利用する。
+
+- Assets, Metadata, and CSS
+`public`ディレクトリを利用する
+
+
+- Imageタグ
+Next.jsは、デフォルトで画像最適化もサポートしています
+
+- CSSコンポーネント
+`container`ディレクトリに格納する
+重要：CSSモジュールを使用するには、CSSファイル名が.`module.css`で終わる必要があります。
+
+
+global CSSファイルは`pages/_app.js`のみにインポート可能
