@@ -58,3 +58,18 @@ npm install tailwindcss postcss-preset-env postcss-flexbugs-fixes
 
 https://nextjs.org/learn/basics/assets-metadata-css/styling-tips
 
+## Pre-rendering and Data Fetching
+
+Next.jsの最も重要なコンセプトにはPre-renderingというものがある。
+https://nextjs.org/docs/basic-features/pages#pre-rendering
+>、各ページのHTMLを事前に生成します。事前レンダリングにより、パフォーマンスとSEOが向上する可能性があります。
+
+Next.jsは静的HTMLをpreレンダリングするため、JavaScript無しでレンダリングできる。
+
+1. ⌥ + ⌘ + i→デバッカーツールの起動
+2. ⌘　+ shilf + p →設定画面
+3. java　scriptを無効
+4. https://next-learn-starter.vercel.app/にアクセス
+
+```注：上記の手順をlocalhostで試すこともできますが、JavaScriptを無効にするとCSSが読み込まれません。```
+
