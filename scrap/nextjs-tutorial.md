@@ -73,3 +73,32 @@ Next.jsは静的HTMLをpreレンダリングするため、JavaScript無しで�
 
 ```注：上記の手順をlocalhostで試すこともできますが、JavaScriptを無効にするとCSSが読み込まれません。```
 
+- Static Generation with Data using `getStaticProps`
+
+getStaticPropsは外部のデータを取得するときに利用される。
+
+- Fetch External API or Query Database
+
+```
+export async function getSortedPostsData() {
+  // Instead of the file system,
+  // fetch post data from an external API endpoint
+  const res = await fetch('..')
+  return res.json()
+}
+```
+
+```
+import someDatabaseSDK from 'someDatabaseSDK'
+
+const databaseClient = someDatabaseSDK.createClient(...)
+
+export async function getSortedPostsData() {
+  // Instead of the file system,
+  // fetch post data from a database
+  return databaseClient.query('SELECT posts...')
+}
+```
+
+`getStaticProps`はクライアント側で実行されることはありません。ブラウザのJSバンドルには含まれていません。つまり、ブラウザに送信せずに、データベースクエリなどのコードを記述できます。
+fallback keyをfalseにすると、アクセスできなくなる。
