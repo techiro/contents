@@ -43,3 +43,18 @@ Next.jsは、デフォルトで画像最適化もサポートしています
 
 
 global CSSファイルは`pages/_app.js`のみにインポート可能
+
+- カスタム PostCSS設定
+
+classnamesライブラリ
+classnameで読み込むcssを変化させる。
+```yarn add classnames```
+
+Next.jsのデフォルトの動作と一致するように、`postcss-preset-env`と`postcss-flexbugs-fixes`を使用することをお勧めします。まず、パッケージをインストールします。
+
+```
+npm install tailwindcss postcss-preset-env postcss-flexbugs-fixes
+```
+
+https://nextjs.org/learn/basics/assets-metadata-css/styling-tips
+
