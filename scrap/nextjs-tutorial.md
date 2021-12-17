@@ -102,3 +102,17 @@ export async function getSortedPostsData() {
 
 `getStaticProps`はクライアント側で実行されることはありません。ブラウザのJSバンドルには含まれていません。つまり、ブラウザに送信せずに、データベースクエリなどのコードを記述できます。
 fallback keyをfalseにすると、アクセスできなくなる。
+
+## Dynamic Route
+ファイル名に変数を入れることができる。
+- getStaticProps
+ページから getStaticProps という async 関数をエクスポートすると、Next.js はビルド時に getStaticProps から返される props を使ってプリレンダリングします。
+
+```
+export async function getStaticProps(context) {
+  return {
+    props: {} // ページコンポーネントにpropsとして渡されます。
+  };
+}
+```
+
